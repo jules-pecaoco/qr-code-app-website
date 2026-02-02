@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR App Suite - Powerful QR Code Attendance & Management System</title>
-    <meta name="description" content="QR App Suite is a comprehensive QR code-based attendance management system for educational institutions. Generate QR codes, scan attendance, and create detailed reports with Google Sheets integration. Supporting 1600+ students with multi-tenant architecture.">
-    <meta name="keywords" content="QR code attendance, student attendance system, QR code generator, attendance tracking, Google Sheets integration, educational attendance software, multi-tenant attendance, CSV to QR code, attendance reports">
+    <meta name="description"
+        content="QR App Suite is a comprehensive QR code-based attendance management system for educational institutions. Generate QR codes, scan attendance, and create detailed reports with Google Sheets integration. Supporting 1600+ students with multi-tenant architecture.">
+    <meta name="keywords"
+        content="QR code attendance, student attendance system, QR code generator, attendance tracking, Google Sheets integration, educational attendance software, multi-tenant attendance, CSV to QR code, attendance reports">
     <meta property="og:title" content="QR App Suite - Smart Attendance Management">
-    <meta property="og:description" content="Streamline attendance tracking with QR codes, Google Sheets integration, and powerful reporting features.">
+    <meta property="og:description"
+        content="Streamline attendance tracking with QR codes, Google Sheets integration, and powerful reporting features.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://qrapps.org">
     <link rel="canonical" href="https://qrapps.org">
@@ -37,7 +41,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
             z-index: 1000;
             border-bottom: 2px solid #000;
         }
@@ -96,26 +100,27 @@
             position: absolute;
             width: 150%;
             height: 150%;
-            background: repeating-linear-gradient(
-                0deg,
-                transparent,
-                transparent 50px,
-                rgba(255,255,255,0.03) 50px,
-                rgba(255,255,255,0.03) 51px
-            ),
-            repeating-linear-gradient(
-                90deg,
-                transparent,
-                transparent 50px,
-                rgba(255,255,255,0.03) 50px,
-                rgba(255,255,255,0.03) 51px
-            );
+            background: repeating-linear-gradient(0deg,
+                    transparent,
+                    transparent 50px,
+                    rgba(255, 255, 255, 0.03) 50px,
+                    rgba(255, 255, 255, 0.03) 51px),
+                repeating-linear-gradient(90deg,
+                    transparent,
+                    transparent 50px,
+                    rgba(255, 255, 255, 0.03) 50px,
+                    rgba(255, 255, 255, 0.03) 51px);
             animation: moveGrid 20s linear infinite;
         }
 
         @keyframes moveGrid {
-            0% { transform: translate(0, 0); }
-            100% { transform: translate(50px, 50px); }
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translate(50px, 50px);
+            }
         }
 
         .hero-content {
@@ -144,6 +149,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -168,7 +174,7 @@
             background: #000;
             color: #fff;
             transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(255,255,255,0.2);
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.2);
         }
 
         .features {
@@ -211,7 +217,7 @@
             background: #000;
             color: #fff;
             transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
         }
 
         .feature-icon {
@@ -423,6 +429,7 @@
         }
     </style>
 </head>
+
 <body>
     <nav class="nav">
         <div class="logo">QR App Suite</div>
@@ -436,7 +443,8 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Streamline Attendance with QR Technology</h1>
-            <p>Powerful QR code-based attendance management system designed for educational institutions. Generate, scan, and analyze attendance data seamlessly with Google Sheets integration.</p>
+            <p>Powerful QR code-based attendance management system designed for educational institutions. Generate,
+                scan, and analyze attendance data seamlessly with Google Sheets integration.</p>
             <a href="#features" class="cta-button">Explore Features</a>
         </div>
     </section>
@@ -448,32 +456,38 @@
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-qrcode"></i></div>
                 <h3>QR Code Generation</h3>
-                <p>Create custom-designed QR codes from CSV files with flexible formatting options. Generate unique codes for students, events, and more.</p>
+                <p>Create custom-designed QR codes from CSV files with flexible formatting options. Generate unique
+                    codes for students, events, and more.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-camera"></i></div>
                 <h3>Real-Time Scanning</h3>
-                <p>Scan QR codes instantly with automatic Google Sheets integration. Support for multiple simultaneous scanners with live UI updates.</p>
+                <p>Scan QR codes instantly with automatic Google Sheets integration. Support for multiple simultaneous
+                    scanners with live UI updates.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-chart-line"></i></div>
                 <h3>Intelligent Reports</h3>
-                <p>Generate detailed attendance reports with advanced filtering by section, organization, year, and custom parameters.</p>
+                <p>Generate detailed attendance reports with advanced filtering by section, organization, year, and
+                    custom parameters.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
                 <h3>Event Management</h3>
-                <p>Create separate events with dedicated Google Sheets stored automatically in your Google Drive. Perfect for tracking multiple activities.</p>
+                <p>Create separate events with dedicated Google Sheets stored automatically in your Google Drive.
+                    Perfect for tracking multiple activities.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fas fa-file-export"></i></div>
                 <h3>Multi-Format Export</h3>
-                <p>Export attendance data and QR codes as PDF, email, or JPEG formats. Share reports effortlessly with stakeholders.</p>
+                <p>Export attendance data and QR codes as PDF, email, or JPEG formats. Share reports effortlessly with
+                    stakeholders.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon"><i class="fab fa-google"></i></div>
                 <h3>Google Integration</h3>
-                <p>Secure Google Authentication with seamless Google Sheets and Drive integration. Your data stays in your control.</p>
+                <p>Secure Google Authentication with seamless Google Sheets and Drive integration. Your data stays in
+                    your control.</p>
             </div>
         </div>
     </section>
@@ -509,7 +523,8 @@
             </div>
             <div class="capability-item">
                 <h4><i class="fas fa-file-csv"></i> CSV Import</h4>
-                <p>Bulk generate QR codes from CSV files, perfect for processing large student databases efficiently.</p>
+                <p>Bulk generate QR codes from CSV files, perfect for processing large student databases efficiently.
+                </p>
             </div>
             <div class="capability-item">
                 <h4><i class="fas fa-building"></i> Multi-Tenant Architecture</h4>
@@ -517,7 +532,8 @@
             </div>
             <div class="capability-item">
                 <h4><i class="fas fa-exclamation-triangle"></i> Penalty Tracking</h4>
-                <p>Automatically calculate student penalties based on absence thresholds and total attendance records.</p>
+                <p>Automatically calculate student penalties based on absence thresholds and total attendance records.
+                </p>
             </div>
             <div class="capability-item">
                 <h4><i class="fas fa-filter"></i> Advanced Filtering</h4>
@@ -541,7 +557,10 @@
     <section class="cta-section">
         <h2>Ready to Transform Your Attendance System?</h2>
         <p>Join educational institutions already using QR App Suite to manage attendance efficiently</p>
-        <a href="#contact" class="cta-button cta-secondary">Get Started Today</a>
+        <a href="mailto:youremail@example.com?subject=QR%20Attendance%20System%20Availability"
+            class="cta-button cta-secondary">
+            Get Started Today
+        </a>
     </section>
 
     <footer id="contact">
@@ -561,15 +580,20 @@
             <div class="footer-section">
                 <h3>Contact</h3>
                 <ul class="contact-info">
-                    <li><i class="fas fa-envelope"></i> <a href="mailto:jules.pecaoco.dev@gmail.com">jules.pecaoco.dev@gmail.com</a></li>
+                    <li><i class="fas fa-envelope"></i> <a
+                            href="mailto:jules.pecaoco.dev@gmail.com">jules.pecaoco.dev@gmail.com</a></li>
                     <li><i class="fas fa-phone"></i> <a href="tel:+639951022578">+63 995 102 2578</a></li>
-                    <li><i class="fab fa-github"></i> <a href="https://github.com/jules-pecaoco" target="_blank">GitHub Profile</a></li>
+                    <li><i class="fab fa-github"></i> <a href="https://github.com/jules-pecaoco" target="_blank">GitHub
+                            Profile</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2026 QR App Suite. All rights reserved. | Developed by <a href="https://julesalfonzpecaoco.site" target="_blank" style="color: #000; text-decoration: none; border-bottom: 2px solid #000;">Jules Alfonz Pecaoco</a></p>
+            <p>&copy; 2026 QR App Suite. All rights reserved. | Developed by <a href="https://julesalfonzpecaoco.site"
+                    target="_blank" style="color: #000; text-decoration: none; border-bottom: 2px solid #000;">Jules
+                    Alfonz Pecaoco</a></p>
         </div>
     </footer>
 </body>
+
 </html>
